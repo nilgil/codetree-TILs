@@ -17,18 +17,18 @@ public class Main {
             int distance = Integer.parseInt(st.nextToken());
 
             switch (way) {
-                case "N" -> {
+                case "N":
                     y += distance;
-                }
-                case "S" -> {
+                    break;
+                case "S":
                     y -= distance;
-                }
-                case "E" -> {
+                    break;
+                case "E":
                     x += distance;
-                }
-                case "W" -> {
+                    break;
+                case "W":
                     x -= distance;
-                }
+                    break;
             }
         }
         System.out.println(x + " " + y);
