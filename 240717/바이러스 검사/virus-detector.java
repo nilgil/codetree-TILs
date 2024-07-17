@@ -24,7 +24,7 @@ public class Main {
             result++;
             counts[i] -= leader;
 
-            if (counts[i] <= 0) {
+            if (0 < counts[i]) {
                 result += counts[i] / crew;
             }
         }
