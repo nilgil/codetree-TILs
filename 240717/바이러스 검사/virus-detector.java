@@ -21,15 +21,7 @@ public class Main {
 
         long result = 0;
         for (int i = 0; i < n; i++) {
-            result++;
-            counts[i] -= leader;
-
-            if (0 < counts[i]) {
-                result += counts[i] / crew;
-                if (counts[i] % crew != 0) {
-                    result++;
-                }
-            }
+            result += 1 + Math.max(0, (counts[i] - leader + crew - 1) / crew);
         }
 
         System.out.println(result);
