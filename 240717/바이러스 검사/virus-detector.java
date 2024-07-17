@@ -26,6 +26,9 @@ public class Main {
 
             if (0 < counts[i]) {
                 result += counts[i] / crew;
+                if (counts[i] % crew != 0) {
+                    result++;
+                }
             }
         }
 
