@@ -8,6 +8,6 @@ public class Main {
         String t = br.readLine();
         String s = br.readLine();
         System.out.println(s);
-        System.out.println(t)
+        System.out.println(t);
     }
 }
