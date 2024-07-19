@@ -16,15 +16,17 @@ public class Main {
                 System.out.println(b);
             } else if (c < a) {
                 System.out.println(a);
+            } else if (a < c) {
+                System.out.println(c);
             }
         } else if (b < a) {
             if (a < c) {
                 System.out.println(a);
             } else if (c < b) {
                 System.out.println(b);
+            } else if (b < c) {
+                System.out.println(c);
             }
-        } else {
-            System.out.println(c);
         }
     }
 }
