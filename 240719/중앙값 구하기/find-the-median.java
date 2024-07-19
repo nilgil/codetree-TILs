@@ -11,6 +11,20 @@ public class Main {
         int a = Integer.parseInt(st.nextToken());
         int b = Integer.parseInt(st.nextToken());
         int c = Integer.parseInt(st.nextToken());
-        System.out.println((a + b + c) / 3);
+        if (a < b) {
+            if (b < c) {
+                System.out.println(b);
+            } else if (c < a) {
+                System.out.println(a);
+            }
+        } else if (b < a) {
+            if (a < c) {
+                System.out.println(a);
+            } else if (c < b) {
+                System.out.println(b);
+            }
+        } else {
+            System.out.println(c);
+        }
     }
 }
